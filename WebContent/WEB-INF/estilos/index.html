@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+  <script src="jquery-2.1.1.js" ></script>
+  <script src="bootstrap.min.js"></script>
+  <link rel="stylesheet" href="bootstrap.css" />
+  <link rel="stylesheet" href="bootstrap-theme.css"/>
+  <link rel="stylesheet" href="style3.css"/>
+  <title>Login</title>
+</head>
+<body>
+<div class="container"> 
+    <hr class="prettyline">
+    <br>
+    <center>
+    <img id="img-ccae"  src="logo.png"/>
+    <br>
+    <button class="btn btn-lg btn-success" data-toggle="modal" data-target=".bs-modal-sm">Cadastrar Disciplina</button>
+    <button class="btn btn-lg btn-success" a href="disciplina.listar" data-toggle="modal" data-target=".bs-modal-sm2">Listar Disciplinas</button>
+   	
+    
+    
+    <br>
+    <hr class="prettyline">
+ </div>
+<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <br>
+        <div class="bs-example bs-example-tabs">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class=""><a href="#signup" data-toggle="tab">Cadastrar Disciplina</a></li>
+            </ul>
+        </div>
+      <div class="modal-body">
+        <div id="myTabContent" class="tab-content">
+        
+        <div class="tab-pane fade active in" id="signin">
+            <form class="form-horizontal" action="disciplina.cadastrar.jsp" method="post">
+            <fieldset>
+            <!-- Sign In Form -->
+            <!-- Text input-->
+            <div class="control-group">
+              <label class="control-label" for="userid">Nome</label>
+              <div class="controls">
+                <input required="" id="userid" name="camponome" type="text" class="form-control" placeholder="Nome da Disciplina" class="input-medium" required="">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="passwordinput">Ementa</label>
+              <div class="controls">
+                <input required="" id="" name="campoementa" class="form-control" type="text" placeholder="Ementa" class="input-medium">
+              </div>
+            </div>
+              <div class="control-group">
+              <label class="control-label" for="">Carga Horária</label>
+              <div class="controls">
+                <input required="" id="" name="campoech" class="form-control" type="text" placeholder="Carga Horária" class="input-medium">
+              </div>
+            </div>
+            
+            <div class="control-group">
+            	<label class="control-label" for="">Ementa</label>
+              	<div class="controls">
+                	<input required="" id="" name="campocodigo" class="form-control" type="text" placeholder="Código" class="input-medium">
+              	</div>
+            </div>
+
+            <!-- Button -->
+            <div class="control-group">
+              <label class="control-label" for="signin"></label>
+              <div class="controls">
+                <button id="signup" name="signup" class="btn btn-success">Cadastrar</button>
+              </div>
+            </div>
+            </fieldset>
+            </form>
+        </div>
+        </div>
+      <div class="modal-footer">
+        <center>
+        	<button type="button" class="btn btn-danger btn-lg btn3d" data-dismiss="modal"><span class="glyphicon glyphicon-off"></span></button>
+        </center>
+
+      </div>
+    </div>
+  </div>
+</div>
+ 
+  
+</body>
+</html>
